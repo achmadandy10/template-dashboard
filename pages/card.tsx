@@ -3,11 +3,11 @@ import { NextPageWithLayout } from '@/utils';
 import { Box } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 
-const Home: NextPageWithLayout = (): JSX.Element => {
+const Card: NextPageWithLayout = (): JSX.Element => {
   return <Box>main</Box>;
 };
 
-Home.getLayout = function getLayout(page: ReactElement) {
+Card.getLayout = function getLayout(page: ReactElement) {
   return (
     <AdminLayout
       title={'Title'}
@@ -19,4 +19,4 @@ Home.getLayout = function getLayout(page: ReactElement) {
   );
 };
 
-export default Home;
+export default Card;

@@ -12,8 +12,8 @@
     "npm": "please-use-yarn"
   },
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect' next dev",
-    "win": "env NODE_OPTIONS='--inspect' next dev",
+    "dev": "NODE_OPTIONS='--inspect' next dev --turbo",
+    "win": "env NODE_OPTIONS='--inspect' next dev --turbo",
     "build": "next build --debug",
     "start": "NODE_ENV=production next start -p 3333",
     "prettier": "prettier --write .",
@@ -29,9 +29,23 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@chakra-ui/anatomy": "^2.1.1",
+    "@chakra-ui/next-js": "^2.1.4",
+    "@chakra-ui/react": "^2.6.1",
+    "@chakra-ui/theme-tools": "^2.0.18",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "framer-motion": "^10.12.18",
     "next": "13.4.7",
+    "next-redux-wrapper": "^8.1.0",
+    "nprogress": "^0.2.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.1.1",
+    "redux-persist": "^6.0.0",
+    "sharp": "^0.32.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
@@ -49,6 +63,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/node": "^20.3.2",
+    "@types/nprogress": "^0.2.0",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
